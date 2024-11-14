@@ -1,0 +1,145 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+    /* ===== HEADER TOP SECTION */
+
+
+  .header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #ffff;
+    padding: 10px 50px;
+  }
+
+    
+  .header-top-left {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+
+  .logo {
+    height: 60px;
+    margin-right: 20px;
+  }
+
+
+  .searchContainer{
+    width: 75%;
+    border: #e9e6e6 1px solid;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+  }
+.searchIcone {
+    color: #979393;
+    font-size: 16px;
+}
+  .searchContainer input {
+    border: none;
+    width: 95%;
+  }
+
+  .searchContainer input:focus{
+    outline: none;
+  }
+
+  .searchContainer input::placeholder {
+    color: #979393;
+    font-size: 16px;
+  }
+
+  
+  .header-right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+  }
+
+  select {
+    border: none;
+    font-size: 16px;
+  }
+
+  select:focus{
+    outline: none;
+  }
+
+
+  /* ===== HEADER BOTTOM SECTION */
+
+  .header-bottom {
+    width: 100%;
+    padding-inline: 40px;
+    background-color: #f3f2f2;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .nav-items:nth-of-type(2) a {
+    font-size: 14px;
+  }
+  
+
+  
+  .location {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .sign-in {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .menu {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .sub-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    padding: 20px 20px;
+  }
+  
+  .sub-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #666;
+  }
+  
