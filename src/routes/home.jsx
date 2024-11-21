@@ -30,6 +30,12 @@ export default function Home() {
           ))}
         </div>
       </div>
+      
+     {/*  ===== BANNER SECTION ====== */}
+
+     <div className="w-full py-20 px-10">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png" alt="" />
+     </div>
     </>
   );
 }
