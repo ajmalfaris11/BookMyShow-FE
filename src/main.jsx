@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
@@ -11,6 +11,7 @@ import Events from "./routes/events";
 import Plays from "./routes/plays";
 import Activities from "./routes/activities";
 import Sports from "./routes/sports";
+import Home from "./routes/home";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,17 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
+      
+      {
+        index: true, // Default child route
+        element: <Navigate to="/home" replace />,
+      },
+
+      {
+        path: "home",
+        element: <Home />,
+      },
+
       {
         path: "/movies",
         element: <Movies />,
