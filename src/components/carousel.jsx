@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
+  "https://assets-in.bmscdn.com/promotions/cms/creatives/1732183672856_21novjokerpreviewweb.jpg",
   "https://assets-in.bmscdn.com/promotions/cms/creatives/1726036566435_playcardnewweb.jpg",
-  "https://assets-in.bmscdn.com/promotions/cms/creatives/1730810351765_webmukta991.jpg",
+  "https://assets-in.bmscdn.com/promotions/cms/creatives/1732016630763_websrikalidas.jpg",
   "https://assets-in.bmscdn.com/promotions/cms/creatives/1731584470926_transformersoneweb.jpg",
 ];
 
