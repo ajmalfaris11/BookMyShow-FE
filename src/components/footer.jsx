@@ -65,7 +65,7 @@ const movieData = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white w-full mt-20">
+    <footer className="bg-gray-900 text-white w-full mt-20">
       <div className="">
         {/* Top Section */}
         <div className="flex justify-between items-center w-full px-5 py-5">
@@ -87,7 +87,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="flex justify-between items-center">
-          <div className="flex items-center justify-around w-full bg-slate-700 py-5">
+          <div className="flex items-center justify-around w-full bg-slate-800 py-5">
             {/* 24/7 Customer Care with Font Awesome icon */}
             <div className="flex items-center gap-4 flex-col">
               <i className="fas fa-headset text-white text-4xl"></i>{" "}
@@ -122,10 +122,7 @@ export default function Footer() {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {movieData.nowShowing.map((movie, index) => (
-                  <span
-                    key={index}
-                    className="text-[12px]"
-                  >
+                  <span key={index} className="text-[12px]">
                     {movie} <span className="ml-1">|</span>
                   </span>
                 ))}
@@ -139,10 +136,7 @@ export default function Footer() {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {movieData.upcomingMovies.map((movie, index) => (
-                  <span
-                    key={index}
-                    className="text-[12px]"
-                  >
+                  <span key={index} className="text-[12px]">
                     {movie} <span className="ml-1">|</span>
                   </span>
                 ))}
@@ -154,10 +148,7 @@ export default function Footer() {
               <h3 className="text-sm font-semibold mb-6">MOVIES BY GENRE</h3>
               <div className="flex flex-wrap gap-2">
                 {movieData.genres.map((genre, index) => (
-                  <span
-                    key={index}
-                    className="text-[12px]"
-                  >
+                  <span key={index} className="text-[12px]">
                     {genre} <span className="ml-1">|</span>
                   </span>
                 ))}
@@ -166,15 +157,10 @@ export default function Footer() {
 
             {/* Movies by Language Section */}
             <section className="mb-8">
-              <h3 className="text-sm font-semibold mb-6">
-                MOVIES BY LANGUAGE
-              </h3>
+              <h3 className="text-sm font-semibold mb-6">MOVIES BY LANGUAGE</h3>
               <div className="flex flex-wrap gap-2">
                 {movieData.languages.map((language, index) => (
-                  <span
-                    key={index}
-                    className="text-[12px]"
-                  >
+                  <span key={index} className="text-[12px]">
                     {language} <span className="ml-1">|</span>
                   </span>
                 ))}
@@ -188,15 +174,77 @@ export default function Footer() {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {movieData.sports.map((sport, index) => (
-                  <span
-                    key={index} 
-                    className="text-[12px]"
-                  >
-                    {sport}  <span className="ml-1">|</span>
+                  <span key={index} className="text-[12px]">
+                    {sport} <span className="ml-1">|</span>
                   </span>
                 ))}
               </div>
             </section>
+          </div>
+        </div>
+
+        {/* ------ FINAL FOOTER SECTION ------ */}
+
+        <div className="bg-gray-900 text-gray-400 py-6">
+          <div className="mx-auto px-4 flex flex-col items-center">
+            <div className="w-full flex justify-center content-center items-center h-full py-12 relative">
+              <div className="bg-white w-full h-[1px] absolute z-0"></div>
+              <div className=" bg-slate-900 px-8 w-50 z-10">
+                <img
+                  src="https://in.bmscdn.com/webin/common/icons/logo.svg"
+                  alt="footer logo"
+                />
+              </div>
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex justify-center space-x-6 mb-10 text-2xl">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white"
+                aria-label="Facebook"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white"
+                aria-label="Twitter"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white"
+                aria-label="YouTube"
+              >
+                <i className="fab fa-youtube"></i>
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white"
+                aria-label="Pinterest"
+              >
+                <i className="fab fa-pinterest"></i>
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white"
+                aria-label="LinkedIn"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+
+            {/* Copyright Information */}
+            <p className="text-center text-sm">
+              Copyright 2024 © Your Company. All Rights Reserved.
+            </p>
+            <p className="text-center text-xs mt-2 mb-10">
+              The content and images used on this site are copyright protected
+              and copyrights vest with the respective owners. Unauthorized use
+              is prohibited and punishable by law.
+            </p>
           </div>
         </div>
       </div>
