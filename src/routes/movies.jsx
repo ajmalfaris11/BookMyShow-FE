@@ -150,11 +150,21 @@ export default function Movies() {
       <div>
         {/* ====== Movies In Location ====== */}
         <div>
-          <h2>Location based </h2>
+          <h2 className="text-2xl font-bold">Movie In Bengaluru</h2>
+          <div className="flex flex-wrap gap-1 px-5 py-5">
+            {languages.map((language) => {
+              return (
+                <div className="border border-gray-300 text-red-500 px-5 py-2 rounded-full bg-white text-xs font-medium">
+                  {" "}
+                  {language}{" "}
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         {/* ===== Movies Section ====== */}
-        <div className="p-4">
+        <div className="py-5">
           <div className="flex flex-wrap gap-8 justify-center">
             {movies.map((movie) => {
               return <MovieCard key={movie._id} movie={movie} />;
