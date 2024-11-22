@@ -53,7 +53,6 @@ const formats = [
   "ICE 3D",
 ];
 
-
 export default function Movies() {
   const [movies, setMovies] = useState([]);
 
@@ -76,11 +75,16 @@ export default function Movies() {
     <div className="flex p-10 bg-slate-100">
       {/* ====== FILTER SECTION ====== */}
       <div className="w-4/5 flex flex-col ">
-      
         <div>
           <h2 className="text-2xl font-bold">Filters</h2>
           <div className="bg-white w-full h-10 mt-5 flex justify-between p-2 px-5 text-sm rounded-t-lg">
-            <span className="text-red-600">^ Languages</span>
+            <span className="flex justify-center gap-2">
+              <span class="material-symbols-outlined text-slate-500 font-extralight">
+                keyboard_arrow_up
+              </span>
+              <span className="text-red-600">Languages</span>
+            </span>
+
             <span className="text-zinc-700">Clear</span>
           </div>
           <div className="flex flex-wrap gap-2 px-5 pb-5 bg-white rounded-b-lg">
@@ -97,7 +101,12 @@ export default function Movies() {
 
         <div className="rounded-lg bg-white mt-5">
           <div className="w-full h-10  flex justify-between p-2 px-5 text-sm">
-            <span className="text-red-600">^ Genres </span>
+            <span className="flex justify-center gap-2">
+              <span class="material-symbols-outlined text-slate-500 font-extralight">
+                keyboard_arrow_up
+              </span>
+              <span className="text-red-600">Genres</span>
+            </span>
             <span className="text-zinc-700">Clear</span>
           </div>
           <div className="flex flex-wrap gap-2 px-5 pb-5">
@@ -114,7 +123,12 @@ export default function Movies() {
 
         <div className="rounded-lg bg-white h-auto mt-5">
           <div className="w-full h-10  flex justify-between p-2 px-5 text-sm">
-            <span className="text-red-600">^ Format </span>
+            <span className="flex justify-center gap-2">
+              <span class="material-symbols-outlined text-slate-500 font-extralight">
+                keyboard_arrow_up
+              </span>
+              <span className="text-red-600">Format</span>
+            </span>{" "}
             <span className="text-zinc-700">Clear</span>
           </div>
           <div className="flex flex-wrap gap-2 px-5 pb-5">
@@ -128,7 +142,10 @@ export default function Movies() {
             })}
           </div>
         </div>
-            <button className="border border-red-600 text-red-600 p-1.5 rounded-lg mt-5"> Browse by Cinemas </button>
+        <button className="border border-red-600 text-red-600 p-1.5 rounded-lg mt-5">
+          {" "}
+          Browse by Cinemas{" "}
+        </button>
       </div>
       <div>
         {/* ====== Movies In Location ====== */}
