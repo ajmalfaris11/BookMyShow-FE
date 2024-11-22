@@ -65,7 +65,7 @@ const movieData = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white w-full mt-20">
+    <footer className="bg-gray-900 text-white w-full">
       <div className="">
         {/* Top Section */}
         <div className="flex justify-between items-center w-full px-5 py-5">
