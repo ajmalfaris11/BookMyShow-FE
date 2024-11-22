@@ -15,6 +15,31 @@ const languages = [
   "Multi Language",
 ];
 
+const genres = [
+  "Drama",
+  "Action",
+  "Comedy",
+  "Thriller",
+  "Crime",
+  "Family",
+  "Romantic",
+  "Adventure",
+  "Fantasy",
+  "Historical",
+  "Musical",
+  "Myster",
+  "Animation",
+  "Devotional",
+  "Period",
+  "Biography",
+  "Horror",
+  "Political",
+  "Phychological",
+  "Sci-Fi",
+  "Supernatural",
+  "Suspense",
+];
+
 
 export default function Movies() {
   const [movies, setMovies] = useState([]);
@@ -38,13 +63,14 @@ export default function Movies() {
     <div className="flex p-10 bg-slate-100">
       {/* ====== FILTER SECTION ====== */}
       <div className="w-4/5 flex flex-col ">
+      
         <div>
           <h2 className="text-2xl font-bold">Filters</h2>
-          <div className="bg-white w-full h-10 mt-5 flex justify-between p-2 px-5 text-sm">
+          <div className="bg-white w-full h-10 mt-5 flex justify-between p-2 px-5 text-sm rounded-t-lg">
             <span className="text-red-600">^ Languages</span>
             <span className="text-zinc-700">Clear</span>
           </div>
-          <div className="flex flex-wrap gap-2 px-5 pb-5 bg-white">
+          <div className="flex flex-wrap gap-2 px-5 pb-5 bg-white rounded-b-lg">
             {languages.map((language) => {
               return (
                 <div className="border border-gray-00 text-red-500 px-3 py-1">
@@ -56,7 +82,22 @@ export default function Movies() {
           </div>
         </div>
 
-        
+        <div className="rounded-lg bg-white mt-5">
+          <div className="w-full h-10  flex justify-between p-2 px-5 text-sm">
+            <span className="text-red-600">^ Genres </span>
+            <span className="text-zinc-700">Clear</span>
+          </div>
+          <div className="flex flex-wrap gap-2 px-5 pb-5 bg-white">
+            {genres.map((genre) => {
+              return (
+                <div className="border border-gray-00 text-red-500 px-3 py-1">
+                  {" "}
+                  {genre}{" "}
+                </div>
+              );
+            })}
+          </div>
+        </div>
 
       </div>
       <div>
