@@ -1,7 +1,19 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "../components/movieCard";
 
-
+const languages = [
+  "Kannada",
+  "English",
+  "Hindi",
+  "Malayalam",
+  "Tamil",
+  "Telugu",
+  "Marathi",
+  "Bengali",
+  "Gujarati",
+  "Japanese",
+  "Multi Language",
+];
 
 
 export default function Movies() {
@@ -25,7 +37,28 @@ export default function Movies() {
   return (
     <div className="flex p-10 bg-slate-100">
       {/* ====== FILTER SECTION ====== */}
-      
+      <div className="w-4/5 flex flex-col ">
+        <div>
+          <h2 className="text-2xl font-bold">Filters</h2>
+          <div className="bg-white w-full h-10 mt-5 flex justify-between p-2 px-5 text-sm">
+            <span className="text-red-600">^ Languages</span>
+            <span className="text-zinc-700">Clear</span>
+          </div>
+          <div className="flex flex-wrap gap-2 px-5 pb-5 bg-white">
+            {languages.map((language) => {
+              return (
+                <div className="border border-gray-00 text-red-500 px-3 py-1">
+                  {" "}
+                  {language}{" "}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        
+
+      </div>
       <div>
         {/* ====== Movies In Location ====== */}
         <div>
