@@ -40,6 +40,19 @@ const genres = [
   "Suspense",
 ];
 
+const formats = [
+  "2D",
+  "3D",
+  "4DX 3D",
+  "IMAX 2D",
+  "2D SCREEN X",
+  "3D SCREEN X",
+  "4DX",
+  "IMAX 3D",
+  "ICE",
+  "ICE 3D",
+];
+
 
 export default function Movies() {
   const [movies, setMovies] = useState([]);
@@ -87,7 +100,7 @@ export default function Movies() {
             <span className="text-red-600">^ Genres </span>
             <span className="text-zinc-700">Clear</span>
           </div>
-          <div className="flex flex-wrap gap-2 px-5 pb-5 bg-white">
+          <div className="flex flex-wrap gap-2 px-5 pb-5">
             {genres.map((genre) => {
               return (
                 <div className="border border-gray-00 text-red-500 px-3 py-1">
@@ -99,6 +112,23 @@ export default function Movies() {
           </div>
         </div>
 
+        <div className="rounded-lg bg-white h-auto mt-5">
+          <div className="w-full h-10  flex justify-between p-2 px-5 text-sm">
+            <span className="text-red-600">^ Format </span>
+            <span className="text-zinc-700">Clear</span>
+          </div>
+          <div className="flex flex-wrap gap-2 px-5 pb-5">
+            {formats.map((format) => {
+              return (
+                <div className="border border-gray-00 text-red-500 px-3 py-1">
+                  {" "}
+                  {format}{" "}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+            <button className="border border-red-600 text-red-600 p-1.5 rounded-lg mt-5"> Browse by Cinemas </button>
       </div>
       <div>
         {/* ====== Movies In Location ====== */}
