@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MovieCard({ movie }) {
   return (
-    <div key={movie.id} className="w-48 bg-white  overflow-hidden relative">
+    <div key={movie.id} className="w-40  overflow-hidden relative">
       <div className="overflow-hidden rounded-xl">
         {movie.isPromoted && (
           <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded">

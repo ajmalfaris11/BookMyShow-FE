@@ -147,11 +147,12 @@ export default function Movies() {
           Browse by Cinemas{" "}
         </button>
       </div>
-      <div>
+
+      <div className="pl-10">
         {/* ====== Movies In Location ====== */}
         <div>
           <h2 className="text-2xl font-bold">Movie In Bengaluru</h2>
-          <div className="flex flex-wrap gap-1 px-5 py-5">
+          <div className="flex flex-wrap gap-1  py-5">
             {languages.map((language) => {
               return (
                 <div className="border border-gray-300 text-red-500 px-5 py-2 rounded-full bg-white text-xs font-medium">
@@ -161,13 +162,17 @@ export default function Movies() {
               );
             })}
           </div>
+          <div className="w-full bg-white p-5 rounded-lg flex justify-between items-center my-4">
+            <span className="font-bold text-lg">Coming Soon</span>
+            <a href="/" className="text-red-700 text-sm">Explore Upcoming Movies&gt; </a>
+          </div>
         </div>
 
         {/* ===== Movies Section ====== */}
         <div className="py-5">
-          <div className="flex flex-wrap gap-8 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             {movies.map((movie) => {
-              return <MovieCard key={movie._id} movie={movie} />;
+              return <MovieCard key={movie._id} movie={movie}/>;
             })}
           </div>
         </div>
