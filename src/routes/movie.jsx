@@ -15,10 +15,12 @@ export default function Movie(props) {
     <>
       <Header />
       <div
-        className="bg-slate-950 text-white"
+        className="relative text-white bg-custom-image bg-cover bg-center"
         style={{ height: "calc(100vh - 40px)" }}
       >
-        <div className="container mx-auto px-4 py-16 h-full flex w-full">
+        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+
+        <div className="container mx-auto px-4 py-16 h-full flex w-full relative z-10">
           <div className="flex flex-col md:flex-row items-center w-full">
             <div>
               <img
@@ -36,7 +38,9 @@ export default function Movie(props) {
               <div className="flex items-center justify-between my-6 py-3 px-5 rounded-lg bg-gray-800">
                 <div className="font-bold flex items-center">
                   {`⭐ ${movie.rating}`} {`( ${movie.votes} Votes )`}{" "}
-                  <span class="material-symbols-outlined mt-1">chevron_right</span>
+                  <span class="material-symbols-outlined mt-1">
+                    chevron_right
+                  </span>
                 </div>
                 <button className="text-gray-800 hover:bg-gray-100 bg-white font-bold py-2 px-4 rounded-lg ml-4">
                   Rate Now
