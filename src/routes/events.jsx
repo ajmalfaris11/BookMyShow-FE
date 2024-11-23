@@ -64,7 +64,7 @@ export default function Events() {
     <>
       <div className="flex p-10 bg-slate-100">
         {/* ====== FILTER SECTION ====== */}
-        <div className="w-4/5 flex flex-col ">
+        <div className="w-3/6 flex flex-col ">
           <div>
             <h2 className="text-2xl font-bold">Filters</h2>
             <div className="bg-white w-full h-10 mt-5 flex justify-between p-2 px-5 text-sm rounded-t-lg">
@@ -183,10 +183,20 @@ export default function Events() {
           </button>
         </div>
 
-        <div className="pl-10">
+        <div className="pl-8">
           {/* ====== Events In Location ====== */}
           <div>
             <h2 className="text-2xl font-bold">Events In Bengaluru</h2>
+            <div className="flex flex-wrap gap-1  py-5">
+            {catagories.map((catagory) => {
+              return (
+                <div className="border border-gray-300 text-red-500 px-5 py-2 rounded-full bg-white text-xs font-medium">
+                  {" "}
+                  {catagory}{" "}
+                </div>
+              );
+            })}
+          </div>
           </div>
         </div>
       </div>
