@@ -188,7 +188,25 @@ export default function Events() {
           Browse by Venues{" "}
         </button>
       </div>
-    </div> 
+
+      <div className="pl-10">
+        {/* ====== Events In Location ====== */}
+        <div>
+          <h2 className="text-2xl font-bold">Events In Bengaluru</h2>
+          
+        </div>
+      </div>
+    </div>
+
+    {/* ----- ROUTER LINKS ----- */}
+    <div className="w-full bg-white p-3  flex justify-start items-start gap-2 text-slate-700">
+      <a href="/home">Home</a>  → <a href="/events">Events</a>
+    </div>
+
+   
+      
+
+      
    </>
   );
 }
