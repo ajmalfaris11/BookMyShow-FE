@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import Header from "../components/header";
 
@@ -11,6 +11,11 @@ export async function loader({ params }) {
 }
 export default function Movie(props) {
   const { movie } = useLoaderData();
+
+  useEffect(() => { // To fix the issue of showing the bottom section when it loads
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />
@@ -28,7 +33,7 @@ export default function Movie(props) {
                 alt="Movie Poster"
                 className="w-64 h-auto rounded-t-xl"
               />
-              <div className="flex bg-black p-1 text-xs font-semibold justify-center rounded-b-xl">
+              <div className="flex bg-black p-2 text-xs font-medium justify-center rounded-b-xl">
                 In cinemas
               </div>
             </div>
