@@ -68,6 +68,11 @@ export default function Movie(props) {
           </div>
         </div>
       </div>
+      {/* ====== About The Movie Section */}
+      <div className="p-10">
+        <h2 className="font-bold text-2xl mb-4">About The movie</h2>
+        <p>{movie.discription}</p>
+      </div>
     </>
   );
 }
