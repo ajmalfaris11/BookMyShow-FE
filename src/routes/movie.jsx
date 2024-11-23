@@ -74,9 +74,14 @@ export default function Movie(props) {
         </div>
       </div>
       {/* ====== About The Movie Section */}
-      <div className="p-10">
+      <div className="p-10 w-[80%]">
         <h2 className="font-bold text-2xl mb-4">About The movie</h2>
         <p>{movie.discription}</p>
+      </div>
+
+      {/* ----- ROUTER LINKS ----- */}
+      <div className="w-full bg-white p-3  flex justify-start items-start gap-2 text-slate-700">
+        <a href="/home">Home</a> → <a href="/movies">Movies</a>  →  <a href={`/movies/${movie._id}`}>{movie.title}</a>
       </div>
     </>
   );
