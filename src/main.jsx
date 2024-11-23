@@ -5,7 +5,7 @@ import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Movies from "./routes/movies";
-import Movie from "./routes/movie";
+import Movie, { loader as movieLoader} from "./routes/movie";
 import Stream from "./routes/stream";
 import Events from "./routes/events";
 import Plays from "./routes/plays";
@@ -35,10 +35,6 @@ const router = createBrowserRouter([
         element: <Movies />,
       },
       {
-        path: "/movies/:movieId", // :Id -> request / Url parameter
-        element: <Movie />,
-      },
-      {
         path: "/stream",
         element: <Stream />,
       },
@@ -59,6 +55,12 @@ const router = createBrowserRouter([
         element: <Activities />,
       },
     ],
+    
+  },
+  {
+    path: "/movies/:movieId", // :Id -> request / Url parameter
+    element: <Movie />,
+    loader: movieLoader
   },
 ]);
 
