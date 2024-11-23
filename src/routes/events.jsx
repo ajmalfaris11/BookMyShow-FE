@@ -207,8 +207,8 @@ export default function Events() {
             when movies were the only source of real entertainment. Now you can
             take a break from the constant screen time to indulge in some live
             entertainment near you with the tap of a button. Find a curated list
-            of upcoming events in <span className="font-bold">Bengaluru</span> so that you can spot the right event
-            for that perfect weekend.
+            of upcoming events in <span className="font-bold">Bengaluru</span>{" "}
+            so that you can spot the right event for that perfect weekend.
           </p>
         </div>
 
@@ -220,13 +220,13 @@ export default function Events() {
             Bookmyshow offers a simple, yet seamless experience for browsing,
             sorting, and booking handpicked events. Just click on the upcoming
             events of your choice, make the payment through one of the many
-            payment gateways, and you’re good to go! <br />  <br /> Consider Bookmyshow as a
-            one-stop-shop for all your live entertainment cravings. You have an
-            option to filter the latest events according to category so you can
-            find the same in the favourite category. You can also filter the
-            genre so you can experience comedy, music, action, and more, artists
-            for you to watch your favourite performer or venue so you can find
-            the closest events to your home.
+            payment gateways, and you’re good to go! <br /> <br /> Consider
+            Bookmyshow as a one-stop-shop for all your live entertainment
+            cravings. You have an option to filter the latest events according
+            to category so you can find the same in the favourite category. You
+            can also filter the genre so you can experience comedy, music,
+            action, and more, artists for you to watch your favourite performer
+            or venue so you can find the closest events to your home.
           </p>
         </div>
 
@@ -235,16 +235,21 @@ export default function Events() {
             Top 3 Events Categories
           </h2>
           <p className="text-sm text-gray-500">
-            Live events are thoughtfully divided into three main categories: <br /><br />
-
-            <span className="font-bold">Comedy events- </span> If you like to tickle your funny bone, comic relief
-            can be your go-to option. Find the latest comedy events by some of
-            Bengaluru’s best comedians. Catch them in Bengaluru performing
-            specials, hosting open mics, trying out new sets, and more. <br /><br />
-            <span className="font-bold">Music shows- </span> Looking for a way to unwind from the post-work blues? 
-            <span className="text-red-600">Music
-            shows</span> might do the trick! Experience handpicked gigs, Bollywood, and
-            concerts from a diverse choice of genres. <br /><br /> <span className="font-bold">Performance/workshops-</span> 
+            Live events are thoughtfully divided into three main categories:{" "}
+            <br />
+            <br />
+            <span className="font-bold">Comedy events- </span> If you like to
+            tickle your funny bone, comic relief can be your go-to option. Find
+            the latest comedy events by some of Bengaluru’s best comedians.
+            Catch them in Bengaluru performing specials, hosting open mics,
+            trying out new sets, and more. <br />
+            <br />
+            <span className="font-bold">Music shows- </span> Looking for a way
+            to unwind from the post-work blues?
+            <span className="text-red-600">Music shows</span> might do the
+            trick! Experience handpicked gigs, Bollywood, and concerts from a
+            diverse choice of genres. <br />
+            <br /> <span className="font-bold">Performance/workshops-</span>
             For those who want to coddle their senses with something more
             hands-on, you can book tickets to a live performance or workshop.
             This can be anything from plays to meetups to art workshops and much
@@ -257,14 +262,15 @@ export default function Events() {
             A hassle-free live events experience
           </h2>
           <p className="text-sm text-gray-500">
-            Our <span className="text-red-600">online streaming events</span> in 2024 are carefully organized. This
-            digital spin on events lets you experience all the good stuff
-            through your laptop or smartphone. Not only does this help you skip
-            the pesky traffic jams but also lets you enjoy your favorite events
-            from the safety of your home. <br /><br /> Booking tickets has never been more
-            rewarding. BookMyShow aspires to bring to you live experiences in
-            Bengaluru that are worth your time, money, and curiosity. Unlock
-            exciting rewards by using exclusive offers and coupons. Taliking about events...
+            Our <span className="text-red-600">online streaming events</span> in
+            2024 are carefully organized. This digital spin on events lets you
+            experience all the good stuff through your laptop or smartphone. Not
+            only does this help you skip the pesky traffic jams but also lets
+            you enjoy your favorite events from the safety of your home. <br />
+            <br /> Booking tickets has never been more rewarding. BookMyShow
+            aspires to bring to you live experiences in Bengaluru that are worth
+            your time, money, and curiosity. Unlock exciting rewards by using
+            exclusive offers and coupons. Taliking about events...
           </p>
         </div>
 
