@@ -8,7 +8,9 @@ export default function Root(props) {
   return (
     <div>
       <Header/>
-      <CustomCarousel/>
+      <div className='mx-2'>
+        <CustomCarousel/>
+        </div>
       <Outlet/>
       <Footer />
     </div>
